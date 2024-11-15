@@ -2,7 +2,6 @@
     - ~1 hour 
         + set up project and compiled pictures/planned layout
 11/15/2024
-    -
+    - 4 hours
         + Compiled more pictures, layed out framework for index, created csv file to use with python
-        + Next time: Implement full photos and names on index, sort by release date, pitchfork rating, alphabet
-        
+        + Created a python file that creates a CSV file for each 
