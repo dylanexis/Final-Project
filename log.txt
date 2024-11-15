@@ -3,4 +3,6 @@
         + set up project and compiled pictures/planned layout
 11/15/2024
     -
-        + Compiled more pictures, layed out framework for pages, created csv file to use with python
+        + Compiled more pictures, layed out framework for index, created csv file to use with python
+        + Next time: Implement full photos and names on index, sort by release date, pitchfork rating, alphabet
+        
