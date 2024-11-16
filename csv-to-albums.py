@@ -34,6 +34,13 @@ def generate_html_for_album(album, output_filename):
         <link rel="stylesheet" href="../styles/reset.css">
     </head>
     <body>
+    <header>
+        <nav>
+            <h1 class = "home_button">
+            <a href="../index.html">Home<a>
+            </h1>
+        </nav>
+    </header>
         <div class="album">
             <img src="../images/covers/{album['album_image']}" alt="{album['album_name']} cover">
             <h1>{album['album_name']}</h1>
