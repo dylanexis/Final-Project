@@ -11,9 +11,7 @@
 <body>
 <button onclick="topFunction()" id="toTop" title="Go to top">Top</button>
 
-<div class = "skip">
-  <a href="#main">Skip to Main Content</a>
-</div>
+  <a class = "skip" href="#main">Skip to Main Content</a>
 
 <header>
    <nav>
@@ -30,7 +28,7 @@
 <section id = "about">
 <h2>About Me</h2 >
 <div>
-    <img src="images/misc/profile-placeholder.jpg" alt="Profile Photo of Me! Dylan James">
+    <img src="images/misc/profile-placeholder.jpg" alt="Profile Photo of Me! Dylan James" id="Dylan">
     So here's a placeholder as a little introduction. I'll talk about how I looove music, some motivations behind this project, and yea
 </div>
 
@@ -40,7 +38,20 @@
 
 <h2>Albums</h2>
 
+<div>Sort by:</div>
+<button type="button">Release Year</button>
+<button type="button">Pitchfork Rating</button>
+
 <div class = "album_gallery">
+  <!-- A Fever You Can't Sweat Out-->
+    <div class = "tile" id = "zero">
+      <a href = "albums/A_Fever_You_Can't_Sweat_Out.html" class = "tile_link" id="one">
+      <img src="images/covers/panic.jpg" alt="Panic! At the Disco Album Cover">
+        <div class = "album_name">A Fever You Can't Sweat Out</div>
+        <div class = "artist">Panic! At the Disco</div>
+      </a>
+    </div>
+  
   <!-- Akousmatikous -->
     <div class = "tile" id = "one">
       <a href = "albums/Akousmatikous.html" class = "tile_link" id="one">
@@ -71,7 +82,7 @@
 
 
   <!-- Brat -->
-    <div class = "tile" id = "four">
+    <div class = "tile" id="four">
       <a href = "albums/Brat.html" class = "tile_link">
       <img src="images/covers/brat.png" alt="Brat Album Cover">
         <div class = "album_name">Brat</div>
@@ -80,7 +91,7 @@
     </div>
 
   <!-- Cobra and Phases -->
-    <div class = "tile" id = "five">
+    <div class = "tile" id="five">
       <a href = "albums/Cobra_and_Phases_Group_Play_Voltage_in_the_Milky_Night.html" class = "tile_link">
       <img src="images/covers/cobra.jpg" alt="Baduizm Album Cover">
         <div class = "album_name">Cobra and Phases</div>
@@ -89,7 +100,7 @@
     </div>
 
   <!-- Debut -->
-    <div class = "tile" id = "six">
+    <div class = "tile" id="six">
     <a href = "albums/Debut.html" class = "tile_link">
       <img src="images/covers/debut.jpg" alt="Debut Album Cover">
         <div class = "album_name">Debut</div>
@@ -98,7 +109,7 @@
     </div>
 
   <!-- Desire, I Want to Turn Into You -->
-    <div class = "tile" id = "seven">
+    <div class = "tile" id ="seven">
       <a href = "albums/Desire_I_Want_To_Turn_Into_You.html" class = "tile_link">
       <img src="images/covers/desire.jpg" alt="Caroline Polachek Album Cover">
         <div class = "album_name">Desire, I Want to Turn Into You</div>
@@ -116,7 +127,7 @@
     </div>
 
   <!-- Erotic Probiotic 2 -->
-    <div class = "tile" id = "nine">
+    <div class = "tile" id ="nine">
     <a href = "albums/Erotic_Probiotic_2.html" class = "tile_link" id="nine">
       <img src="images/covers/eroprobio2.jpg" alt="Erotic Probiotic 2 Album Cover">
         <div class = "album_name">Erotic Probiotic 2</div>
@@ -134,7 +145,7 @@
     </div>
 
   <!-- Imaginal Disk -->
-    <div class = "tile" id ="eleven">
+    <div class = "tile" id="eleven">
     <a href = "albums/Imaginal_Disk.html" class = "tile_link">
       <img src="images/covers/imaginal-disk.jpg" alt="Imaginal Disk Album Cover">
         <div class = "album_name">Imaginal Disk</div>
@@ -144,7 +155,7 @@
 
 
   <!-- In Rainbows -->
-    <div class = "tile" id = "twelve">
+    <div class = "tile" id ="twelve">
       <a href = "albums/In_Rainbows.html" class = "tile_link">
       <img src="images/covers/rainbows.jpg" alt="In Rainbows Album Cover">
         <div class = "album_name">In Rainbows</div>
@@ -153,7 +164,7 @@
     </div>
 
   <!-- Kid A -->
-    <div class = "tile" id = "thirteen">
+    <div class = "tile" id ="thirteen">
     <a href = "albums/Kid_A.html" class = "tile_link">
       <img src="images/covers/kida.jpg" alt="Kid A Album Cover">
         <div class = "album_name">Kid A</div>
@@ -239,11 +250,11 @@
       <img src="images/covers/tracey-denim.jpg" alt="Tracey Denim Album Cover">
         <div class = "album_name">Tracey Denim</div>
         <div class = "artist">bar italia</div>
+      </a>
     </div>
-  </a>
 
   <!-- Untrue -->
-    <div class = "tile" id = "twentythree">
+    <div class = "tile" id ="twentythree">
     <a href = "albums/Untrue.html" class = "tile_link">
       <img src="images/covers/untrue.jpg" alt="Untrue Album Cover">
         <div class = "album_name">Untrue</div>
@@ -258,12 +269,12 @@
       <img src="images/covers/pawn.jpg" alt="When the Pawn... Album Cover">
         <div class = "album_name">When the Pawn...</div>
         <div class = "artist">Fiona Apple</div>
-    </a>
+     </a>
     </div>
 
   <!-- With a Hammer -->
     <div class = "tile" id = "twentyfive">
-      <a href = "albums/With_a_Hammer.html" class = "tile_link">
+    <a href = "albums/With_a_Hammer.html" class = "tile_link">
       <img src="images/covers/hammer.jpg" alt="Yaeji Album Cover">
         <div class = "album_name">With a Hammer</div>
         <div class = "artist">Yaeji</div>

@@ -6,4 +6,8 @@
         + Compiled more pictures, layed out framework for index, created csv file to use with python
         + python file that creates a CSV file for each, styled them
         + Populated index.html... Hardcoded this....
-
+11/18/2024
+    - 4 hours
+        + Some manual structure changes and styling
+        + Lots of styling dos and undos
+        + I burned myself out a little bit

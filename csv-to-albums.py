@@ -16,7 +16,8 @@ def read_albums_from_csv(filename='albums.csv'):
                 'comments': row[7] if row[7] else "No comments available.",
                 'pitchfork_rating': row[8],
                 'favorite': row[9],
-                'album_image': row[10]  # Image filename
+                'album_image': row[10],  # Image filename
+                'album_id': row[11]
             }
             albums.append(album)
     return albums
@@ -34,6 +35,7 @@ def generate_html_for_album(album, output_filename):
         <link rel="stylesheet" href="../styles/reset.css">
     </head>
     <body>
+      <a class = "skip" href="#main">Skip to Main Content</a>
     <header>
         <nav>
             <h1 class = "home_button">
@@ -41,15 +43,21 @@ def generate_html_for_album(album, output_filename):
             </h1>
         </nav>
     </header>
-        <div class="album">
+        <div class="album" id="a{album['album_id']}">
             <img src="../images/covers/{album['album_image']}" alt="{album['album_name']} cover">
             <h1>{album['album_name']}</h1>
             <p><strong>Artist:</strong> {album['artist']}</p>
             <p><strong>Genres:</strong> {", ".join(album['genres'])}</p>
             <p><strong>Release Year:</strong> {album['release_year']}</p>
+            
             <p><strong>Pitchfork Rating:</strong> <span class="rating">{album['pitchfork_rating']}</span></p>
+            <div class = "rating">
+                <progress value="{album['pitchfork_rating']}" max = "10"></progress>
+            </div>
             <p><strong>Favorite Track:</strong> {album['favorite']}</p>
-            <p><strong>Comments:</strong> {album['comments']}</p>
+            <div class = "comments">
+                <p><strong>Comments:</strong> {album['comments']}</p>
+            </div>
         </div>
     </body>
     </html>
