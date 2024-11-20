@@ -45,6 +45,10 @@ transform: translateY(0%);
     background-color: #555;
   }
 
+  nav li {
+    display: inline;
+}
+
 /*About Me Styles*/
 #Dylan{
   height: 150px;
@@ -68,11 +72,12 @@ transform: translateY(0%);
 
 .tile img:hover{
   width:70vw;
+  border-radius: 25px;
+  transition-duration: 0.4s;
 }
 
 .tile img{
   width: 50vw;
-  border-radius: 25px;
 }
 
 .tile_link{ 
@@ -84,6 +89,12 @@ text-transform: none;
 .artist{
 text-decoration: none;
 }
+
+.PF, .year{
+  display: none;
+}
+
+/* End Album Gallery */
 
 footer{
   background-color: #555;
@@ -100,8 +111,18 @@ footer{
   }
 } 
 
+
+/* Tablet View */
 @media screen and (min-width: 740px){
   .album_gallery{
-    
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+/* Desktop View */
+
+@media screen and (min-width: 960px){
+  .album_gallery{
+    grid-template-columns: repeat(4,1fr);
   }
 }

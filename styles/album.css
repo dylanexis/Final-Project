@@ -22,8 +22,8 @@ transform: translateY(0%);
 .album {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5,1fr);
-    max-width: 800px;
+    grid-template-rows: repeat(2,1fr);
+    min-width: 300px;
     margin: 20px auto;
     background-color: white;
     padding: 20px;
@@ -38,6 +38,8 @@ transform: translateY(0%);
 }
 
 .album h1 {
+    font-size: 40px;
+    font-weight: bold;
     grid-column: 3/7;
     align-self: center;
 }
@@ -57,7 +59,7 @@ transform: translateY(0%);
     padding: 10px
 }
 
-/* Individual Styles*/
+/* Individual Album Styles*/
 
 /* A Fever You Can't Sweat Out - Panic! At the Disco */
 #a1{
@@ -68,18 +70,16 @@ transform: translateY(0%);
 #a2{
 
 }
+/* Baduizm */
+#a3{
+background-color: black;
+}
 
 /* Imaginal Disk - Magdalena Bay */
 #a12{
     background-image: url("../images/misc/sky.jpg");
 }
 
-#a12 h1{
-    color: white;
-    font-weight: bold;
-    font-size: 40px;
-    padding-left: 70px;
-}
 
 /* The Snow Strippers */
 #a21{

@@ -11,7 +11,10 @@ def read_albums_from_csv(filename='albums.csv'):
             album = {
                 'album_name': row[0],
                 'artist': row[1],
-                'genres': row[2:6],  # Genres from column 2 to 5
+                'genre1': row[2],
+                'genre2': row[3],
+                'genre3': row[4],
+                'genre4': row[5],  # Genres from column 2 to 5
                 'release_year': row[6],
                 'comments': row[7] if row[7] else "No comments available.",
                 'pitchfork_rating': row[8],
@@ -34,7 +37,7 @@ def generate_html_for_album(album, output_filename):
         <link rel="stylesheet" href ="../styles/album.css">
         <link rel="stylesheet" href="../styles/reset.css">
     </head>
-    <body>
+    <body id="a{album['album_id']}">
       <a class = "skip" href="#main">Skip to Main Content</a>
     <header>
         <nav>
@@ -43,22 +46,21 @@ def generate_html_for_album(album, output_filename):
             </h1>
         </nav>
     </header>
-        <div class="album" id="a{album['album_id']}">
+        <div class="album">
             <img src="../images/covers/{album['album_image']}" alt="{album['album_name']} cover">
             <h1>{album['album_name']}</h1>
-            <p><strong>Artist:</strong> {album['artist']}</p>
-            <p><strong>Genres:</strong> {", ".join(album['genres'])}</p>
+            <div class = "artist"> {album['artist']}</div>
+            <div class = "genres id = "{album['genre1']}">{album['genre1']}</div>
+            <div class = "genres id = "{album['genre2']}">{album['genre2']}</div>
+            <div class = "genres id = "{album['genre3']}">{album['genre3']}</div>
+            <div class = "genres id = "{album['genre4']}">{album['genre4']}</div>
             <p><strong>Release Year:</strong> {album['release_year']}</p>
-            
-            <p><strong>Pitchfork Rating:</strong> <span class="rating">{album['pitchfork_rating']}</span></p>
-            <div class = "rating">
-                <progress value="{album['pitchfork_rating']}" max = "10"></progress>
-            </div>
-            <p><strong>Favorite Track:</strong> {album['favorite']}</p>
+        </div>
+        <div><p><strong>Pitchfork Rating:</strong> <span class="rating">{album['pitchfork_rating']}</span></p></div>
+        <div><p><strong>Favorite Track:</strong> {album['favorite']}</p></div>
             <div class = "comments">
                 <p><strong>Comments:</strong> {album['comments']}</p>
             </div>
-        </div>
     </body>
     </html>
     """
