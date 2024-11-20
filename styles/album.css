@@ -59,6 +59,21 @@ transform: translateY(0%);
     padding: 10px
 }
 
+/* Genre Styles */
+.genres{
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.genres:nth-child(2){
+    transform: rotate(1deg);
+}
+
+#Experimental{
+    background-color: #f39c12;
+}
+
 /* Individual Album Styles*/
 
 /* A Fever You Can't Sweat Out - Panic! At the Disco */
@@ -94,4 +109,9 @@ background-color: black;
 /* When the Pawn... Fiona Apple*/
 #a25{
     background-color: maroon;
+}
+
+
+@media (prefers-color-scheme: dark){
+ 
 }

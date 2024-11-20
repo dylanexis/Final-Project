@@ -5,10 +5,13 @@ body{
 
 h1{
   font-size: 40px;
+  padding: 50px;
+  text-align: center;
 }
 
 h2{
   font-size: 30px;
+  text-align: center;
 }
 
 .skip{
@@ -45,13 +48,40 @@ transform: translateY(0%);
     background-color: #555;
   }
 
+  nav ul{
+    background-color: #555;
+    padding: 20px;
+    justify-content: space-between;
+  }
+
   nav li {
     display: inline;
+    font-size: 20px;
+}
+
+nav li a {
+  text-decoration: none;
+  color:#F6F7EB
+}
+
+nav li a:hover{
+  background-color: black;
 }
 
 /*About Me Styles*/
 #Dylan{
   height: 150px;
+}
+/* Buttons */
+button{
+  background-color: thistle;
+  border: none;
+  padding: 15px 32px;
+}
+
+button:disabled{
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 /* Album Gallery Styles */
