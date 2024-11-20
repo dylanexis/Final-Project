@@ -35,7 +35,9 @@ def generate_html_for_album(album, output_filename):
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{album['album_name']} - Album Page</title>
         <link rel="stylesheet" href ="../styles/album.css">
-        <link rel="stylesheet" href="../styles/reset.css">
+        <link rel="stylesheet" href="../styles/reset.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     </head>
     <body id="a{album['album_id']}">
       <a class = "skip" href="#main">Skip to Main Content</a>
@@ -50,10 +52,10 @@ def generate_html_for_album(album, output_filename):
             <img src="../images/covers/{album['album_image']}" alt="{album['album_name']} cover">
             <h1>{album['album_name']}</h1>
             <div class = "artist"> {album['artist']}</div>
-            <div class = "genres id = "{album['genre1']}">{album['genre1']}</div>
-            <div class = "genres id = "{album['genre2']}">{album['genre2']}</div>
-            <div class = "genres id = "{album['genre3']}">{album['genre3']}</div>
-            <div class = "genres id = "{album['genre4']}">{album['genre4']}</div>
+            <div class = "genres" id = "{album['genre1']}">{album['genre1']}</div>
+            <div class = "genres" id = "{album['genre2']}">{album['genre2']}</div>
+            <div class = "genres" id = "{album['genre3']}">{album['genre3']}</div>
+            <div class = "genres" id = "{album['genre4']}">{album['genre4']}</div>
             <p><strong>Release Year:</strong> {album['release_year']}</p>
         </div>
         <div><p><strong>Pitchfork Rating:</strong> <span class="rating">{album['pitchfork_rating']}</span></p></div>

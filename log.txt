@@ -11,3 +11,6 @@
         + Some manual structure changes and styling
         + Lots of styling dos and undos
         + I burned myself out a little bit
+11/20/2024
+    - 4 hours
+        + JavaScript Craze!! Literally no styling decided yet... That's ok...
