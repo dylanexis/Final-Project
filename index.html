@@ -42,9 +42,11 @@
 <h2>Albums</h2>
 
 <div>Sort by:</div>
-<div class = "buttons"><button id = "alphaBtn" onclick="toggleDiv('album')">Album Name</button>
-<button id = "yearBtn" onclick="toggleDiv('year')">Release Year</button>
-<button id = "PFBtn" onclick="toggleDiv('PF')">Pitchfork Rating</button></div>
+<div class = "buttons">
+  <button id = "alphaBtn" class = "sort" onclick="toggleDiv('album_name')">Album Name</button>
+  <button id = "yearBtn" class = "sort" onclick="toggleDiv('year')">Release Year</button>
+  <button id = "PFBtn" class = "sort" onclick="toggleDiv('PF')">Pitchfork Rating</button>
+</div>
 
 <div class = "album_gallery" id ="container">
   <!-- A Fever You Can't Sweat Out-->

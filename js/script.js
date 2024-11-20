@@ -133,7 +133,7 @@ function toggleDiv(className) {
         div.style.display = "none";
       });
     }
-    else if (className === 'album'){
+    else if (className === 'album_name'){
       PFDiv.forEach(function(div){
         div.style.display = "none";
       });
