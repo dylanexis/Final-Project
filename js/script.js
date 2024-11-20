@@ -113,9 +113,35 @@ rating.addEventListener('click', () => refresh('rating', rating));
 
 
 function toggleDiv(className) {
-    var div = document.querySelectorAll('.'+ className);
-   
-    divs.forEach(function(div) {
-    div.style.display = div.style.display == "none" ? "block" : "none";
+    var yearDiv = document.querySelectorAll('.year');
+    var PFDiv = document.querySelectorAll('.PF');
+    var noDiv = document.querySelectorAll('.album_name');
+
+    if (className === 'year'){
+      PFDiv.forEach(function(div){
+        div.style.display = "none";
+      });
+      yearDiv.forEach(function(div){
+        div.style.display = "block";
+    });
+  }
+   else if (className === 'PF'){
+      PFDiv.forEach(function(div){
+        div.style.display = "block";
+      });
+      yearDiv.forEach(function(div) {
+        div.style.display = "none";
+      });
+    }
+    else if (className === 'album'){
+      PFDiv.forEach(function(div){
+        div.style.display = "none";
+      });
+      yearDiv.forEach(function(div){
+        div.style.display = "none";
+      });
+    }
+    noDiv.forEach(function(div){
+      div.style.display = "block";
     });
 }
