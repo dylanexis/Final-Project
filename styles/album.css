@@ -19,6 +19,10 @@ body {
 transform: translateY(0%);
 }
 
+nav{
+    text-decoration: none;
+}
+
 .album {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -111,7 +115,24 @@ background-color: black;
     background-color: maroon;
 }
 
+/* Footer */
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #555;
+    color: white;
+    text-align: center;
+}
+
 
 @media (prefers-color-scheme: dark){
- 
+    body{
+        color:azure;
+    }
+    .album{
+    background-color: gray;
+ }
 }

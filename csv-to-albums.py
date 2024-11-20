@@ -68,6 +68,9 @@ def generate_html_for_album(album, output_filename):
                 <p><strong>Comments:</strong> {album['comments']}</p>
             </div>
     </body>
+    <footer>
+    <div>@Dylan James 2024</div>
+    </footer>
     </html>
     """
 
