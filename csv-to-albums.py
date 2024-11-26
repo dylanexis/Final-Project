@@ -20,7 +20,6 @@ def read_albums_from_csv(filename='albums.csv'):
                 'pitchfork_rating': row[8],
                 'favorite': row[9],
                 'album_image': row[10],  # Image filename
-                'album_id': row[11]
             }
             albums.append(album)
     return albums
@@ -34,21 +33,23 @@ def generate_html_for_album(album, output_filename):
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{album['album_name']} - Album Page</title>
-        <link rel = "icon" href = "../images/misc/CD.png">
-        <link rel="stylesheet" href ="../styles/album.css">
-        <link rel="stylesheet" href="../styles/reset.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel = "icon" href="../images/misc/CD.png">
+        <link rel="stylesheet" href="../styles/album.css">
+        <link rel="stylesheet" href="../styles/reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     </head>
-    <body id="a{album['album_id']}">
+    <body>
       <a class = "skip" href="#main">Skip to Main Content</a>
     <header>
         <nav>
             <h1 class = "home_button">
-            <a href="../index.html">Home<a>
+            <a href="../index.html">Home</a>
             </h1>
         </nav>
     </header>
+    <div class = "info">
         <div class="album">
             <img src="../images/covers/{album['album_image']}" alt="{album['album_name']} cover">
             <h1>{album['album_name']}</h1>
@@ -56,14 +57,14 @@ def generate_html_for_album(album, output_filename):
             <p>{album['release_year']}</p>
         </div>
         <div class = "genres">
-            <h3>Genres<h3>
+            <h3>Genres</h3>
             <div id = "{album['genre1']}">{album['genre1']}</div>
             <div id = "{album['genre2']}">{album['genre2']}</div>
             <div id = "{album['genre3']}">{album['genre3']}</div>
             <div id = "{album['genre4']}">{album['genre4']}</div>
         </div>
-        <div><p><strong>Pitchfork Rating:</strong> <span class="rating">{album['pitchfork_rating']}</span></p></div>
-        <div><p><strong>Favorite Track:</strong> {album['favorite']}</p></div>
+        <div class = "rating"><p><strong>Pitchfork Rating:</strong>{album['pitchfork_rating']}</p></div>
+        <div class = "fav"><p><strong>Favorite Track:</strong> {album['favorite']}</p></div>
             <div class = "comments">
                 <p><strong>Comments:</strong> {album['comments']}</p>
             </div>
