@@ -40,7 +40,7 @@ def generate_html_for_album(album, output_filename):
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body id = "bckgrnd">
       <a class = "skip" href="#main">Skip to Main Content</a>
     <header>
         <nav>
@@ -68,6 +68,7 @@ def generate_html_for_album(album, output_filename):
             <div class = "comments">
                 <p><strong>Comments:</strong> {album['comments']}</p>
             </div>
+        </div>
     </body>
     <footer>
     <div>@Dylan James 2024</div>

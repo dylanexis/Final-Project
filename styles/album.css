@@ -1,10 +1,13 @@
  html{
-    background-color: red;
     font-family: "Fredoka", sans-serif;
     margin: 0;
     padding: 0;
     height: 100%;
 
+  }
+
+  #bckgrnd{
+    background: #e0e1dd;
   }
 
 .skip{
@@ -21,18 +24,21 @@
 transform: translateY(0%);
 }
 
-nav{
+nav a{
     text-decoration: none;
+    color: black;
 }
 
 img{
     height: 30vw;
 }
 
+
 .info{
     display: grid;
+    background-color: #e0e1dd;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     margin: 20px;
     gap: 15px;
 }
@@ -47,13 +53,20 @@ img{
 
 .rating {
     font-weight: bold;
-    color: #f39c12;
+    color: green;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    border-radius: 10px;
+}
+
+.fav{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px; 
+    border-radius: 10px;
 }
 
 
 .comments{
-    grid-row: 4;
+    grid-row: 3;
+    grid-column: 1/5;
     box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
     border-radius: 25px;
     padding: 10px
@@ -78,6 +91,8 @@ img{
 /* Footer */
 
 footer{
+    color: black;
+    padding-top: 10px;
     position: fixed;
     left: 0;
     bottom: 0;
