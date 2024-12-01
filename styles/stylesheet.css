@@ -45,7 +45,6 @@ transform: translateY(0%);
     outline: none;
     background-color:black;
     color: white;
-    cursor: pointer;
     padding: 15px;
     border-radius: 4px;
   }
@@ -53,36 +52,6 @@ transform: translateY(0%);
   #toTop:hover {
     background-color: #555;
   }
-
-/* Navigation */
-nav ul{
-    display: flex;
-    background-color: #555;
-    padding: 14px 16px;
-    margin: 0;
-    justify-content: space-evenly;
-  }
-
-nav li {
-    display: inline;
-    font-size: 20px;
-}
-
-
-nav li a {
-  text-decoration: none;
-  color:#F6F7EB;
-  padding: 14px 16px;
-}
-
-nav li a:hover{
-  background-color: black;
-  transition: 0.3s;
-}
-
-.current{
-  background-color: black;
-}
 
 /* Home Styles */
 .center{
@@ -148,7 +117,7 @@ position: relative;
 
 .tile{
   position: relative;
-  background-color: white;
+  background-color: transparent;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
@@ -172,6 +141,10 @@ text-transform: none;
 text-decoration: none;
 padding-left: 15px;
 padding-right: 5px;
+}
+
+.artist{
+  padding-bottom: 10px;
 }
 
 .PF, .year{
@@ -207,6 +180,8 @@ footer{
   text-align: center;
 }
 
+/* Accessibility and User Preferences*/
+
 @media (prefers-reduced-motion){
   body{
     transition: none;
@@ -216,16 +191,40 @@ footer{
 
 @media (prefers-color-scheme: dark){
   body{
-    color: white;
+    background-color: #0d1b2a;
+    color: #e0e1dd;
   } 
-  /* Album Gallery Recoloring */
-   .tile{
-    background-color: black;
-    color: white;
-   }
-   .artist, .album_name {
-    color: white;
-   }
+
+  #toTop{
+    background-color: #415a77;
+  }
+
+  #toTop:hover{
+    background-color: #778da9;
+  }
+
+  .artist, .album_name{
+    color: #e0e1dd;
+  }
+
+  .sort{
+    background-color: #e0e1dd;
+    border-color: #778da9;
+    box-shadow: #778da9 4px 4px 0 0;
+  }
+
+  .sort:hover{
+    opacity: 0.9;
+  }
+  .tile{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  .PF, .year{
+    border-color: #e0e1dd;
+    background-color: #1b263b;
+    color: #e0e1dd;
+  }
 }
 
 

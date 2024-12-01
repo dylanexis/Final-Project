@@ -51,10 +51,10 @@ def generate_html_for_album(album, output_filename):
     </header>
     <div class = "info">
         <div class="album">
-            <img src="../images/covers/{album['album_image']}" alt="{album['album_name']} cover">
-            <h1>{album['album_name']}</h1>
+            <div class = "cover"><img src="../images/covers/{album['album_image']}" alt="{album['album_name']} cover"></div>
+            <div class = "title"><h1>{album['album_name']}</h1></div>
             <div class = "artist"> {album['artist']}</div>
-            <p>{album['release_year']}</p>
+            <div class = "year"><p>{album['release_year']}</p></div>
         </div>
         <div class = "genres">
             <h3>Genres</h3>
