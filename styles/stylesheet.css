@@ -13,6 +13,7 @@ h1{
   font-size: 40px;
   padding: 50px;
   text-align: center;
+  width: 100vw;
 }
 
 h2{
@@ -65,6 +66,10 @@ position: relative;
   top: 50%;
   left:50%;
   transform: translate(-50%, -50%);
+}
+
+.center h1{
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 .center img{
@@ -162,8 +167,8 @@ padding-right: 5px;
 /* End Album Gallery */
 
 footer{
-  background-color: #555;
-  color:aliceblue;
+  background-color: #e0e1dd;
+  color: #0d1b2a  ;
   padding: 0;
   padding-top: 10px;
   padding-bottom: 10px;
