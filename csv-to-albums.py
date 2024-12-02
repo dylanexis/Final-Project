@@ -63,7 +63,10 @@ def generate_html_for_album(album, output_filename):
             <div id = "{album['genre3']}">{album['genre3']}</div>
             <div id = "{album['genre4']}">{album['genre4']}</div>
         </div>
-        <div class = "rating"><p><strong>Pitchfork Rating:</strong>{album['pitchfork_rating']}</p></div>
+        <div class = "rating">
+        <div>{album['pitchfork_rating']}</div>
+        <p>Pitchfork Rating</p>
+        </div>
         <div class = "fav"><p><strong>Favorite Track:</strong> {album['favorite']}</p></div>
             <div class = "comments">
                 <p><strong>Comments:</strong> {album['comments']}</p>
