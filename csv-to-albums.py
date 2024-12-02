@@ -52,22 +52,26 @@ def generate_html_for_album(album, output_filename):
     <div class = "info">
         <div class="album">
             <div class = "cover"><img src="../images/covers/{album['album_image']}" alt="{album['album_name']} cover"></div>
-            <div class = "title"><h1>{album['album_name']}</h1></div>
-            <div class = "artist"> {album['artist']}</div>
-            <div class = "year"><p>{album['release_year']}</p></div>
+            <div class = "texts">
+                <div id = "title"><h1>{album['album_name']}</h1></div>
+                <div id = "artist">{album['artist']}</div>
+                <div id = "year" ><p>{album['release_year']}</p></div>
+            </div>
         </div>
         <div class = "genres">
-            <h3>Genres</h3>
+            <h2>Genres</h2>
             <div id = "{album['genre1']}">{album['genre1']}</div>
             <div id = "{album['genre2']}">{album['genre2']}</div>
             <div id = "{album['genre3']}">{album['genre3']}</div>
             <div id = "{album['genre4']}">{album['genre4']}</div>
         </div>
         <div class = "rating">
-        <div>{album['pitchfork_rating']}</div>
-        <p>Pitchfork Rating</p>
+            <div>{album['pitchfork_rating']}</div>
+                <p>Pitchfork Rating</p>
         </div>
-        <div class = "fav"><p><strong>Favorite Track:</strong> {album['favorite']}</p></div>
+        <div class = "fav">
+            <div>Favorite Track</div> {album['favorite']}
+        </div>
             <div class = "comments">
                 <p><strong>Comments:</strong> {album['comments']}</p>
             </div>
