@@ -144,3 +144,20 @@ function toggleDiv(className) {
       div.style.display = "block";
     });
 }
+
+
+const seenCheckbox = document.getElementById('seen');
+
+
+seenCheckbox.addEventListener('change', function() {
+
+  const allTiles = document.querySelectorAll('.album_gallery .tile');
+  
+
+  allTiles.forEach(function(tile) {
+
+    if (!tile.classList.contains('live')) {
+      tile.style.display = seenCheckbox.checked ? 'none' : 'block';
+    }
+  });
+});
