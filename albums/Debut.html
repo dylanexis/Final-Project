@@ -13,16 +13,17 @@
         <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     </head>
     <body id = "bckgrnd">
-      <a class = "skip" href="#main">Skip to Main Content</a>
+      <a class = "skip" href="#start">Skip to Main Content</a>
     <header>
-        <nav>
-            <h1 class = "home_button">
+        <nav id = "home">
+            <img src = "../images/misc/CD.png" alt = "CD Logo">
+            <div class = "home_button">
             <a href="../index.html">Home</a>
-            </h1>
+            </div>
         </nav>
     </header>
     <div class = "info">
-        <div class="album">
+        <div id = "start" class="album" tabindex = "1">
             <div class = "cover"><img src="../images/covers/debut.jpg" alt="Debut cover"></div>
             <div class = "texts">
                 <div id = "title"><h1>Debut</h1></div>
@@ -32,20 +33,21 @@
         </div>
         <div class = "genres">
             <h2>Genres</h2>
-            <div id = "Art Pop">Art Pop</div>
-            <div id = "Folk">Folk</div>
-            <div id = "Alternative">Alternative</div>
-            <div id = "Indie">Indie</div>
+            <div>Art Pop</div>
+            <div>Folk</div>
+            <div>Alternative</div>
+            <div>Indie</div>
         </div>
-        <div class = "rating">
+        <div class = "rating" tabindex = "1">
             <div>Not available</div>
                 <p>Pitchfork Rating</p>
         </div>
-        <div class = "fav">
-            <div>Favorite Track</div> Human Behaviour
+        <div class = "fav" tabindex = "1">
+            <div>Favorite Track</div>
+            <div>Human Behaviour</div>
         </div>
-            <div class = "comments">
-                <p><strong>Comments:</strong> Some Comments on the album</p>
+            <div class = "comments" tabindex = "1">
+                <p>Some Comments on the album</p>
             </div>
         </div>
     </body>

@@ -13,16 +13,17 @@
         <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     </head>
     <body id = "bckgrnd">
-      <a class = "skip" href="#main">Skip to Main Content</a>
+      <a class = "skip" href="#start">Skip to Main Content</a>
     <header>
-        <nav>
-            <h1 class = "home_button">
+        <nav id = "home">
+            <img src = "../images/misc/CD.png" alt = "CD Logo">
+            <div class = "home_button">
             <a href="../index.html">Home</a>
-            </h1>
+            </div>
         </nav>
     </header>
     <div class = "info">
-        <div class="album">
+        <div id = "start" class="album" tabindex = "1">
             <div class = "cover"><img src="../images/covers/akousmatikous.jpg" alt="Akousmatikous cover"></div>
             <div class = "texts">
                 <div id = "title"><h1>Akousmatikous</h1></div>
@@ -32,20 +33,21 @@
         </div>
         <div class = "genres">
             <h2>Genres</h2>
-            <div id = "Electronic">Electronic</div>
-            <div id = "Jazz">Jazz</div>
-            <div id = "Experimental">Experimental</div>
-            <div id = ""></div>
+            <div>Electronic</div>
+            <div>Jazz</div>
+            <div>Experimental</div>
+            <div></div>
         </div>
-        <div class = "rating">
+        <div class = "rating" tabindex = "1">
             <div>Not available</div>
                 <p>Pitchfork Rating</p>
         </div>
-        <div class = "fav">
-            <div>Favorite Track</div> Dimcola Reprise
+        <div class = "fav" tabindex = "1">
+            <div>Favorite Track</div>
+            <div>Dimcola Reprise</div>
         </div>
-            <div class = "comments">
-                <p><strong>Comments:</strong> Akousmatikous is an unbelievably fun album using experimental and dreamy electronic elements</p>
+            <div class = "comments" tabindex = "1">
+                <p>Akousmatikous is an unbelievably fun album using experimental and dreamy electronic elements</p>
             </div>
         </div>
     </body>

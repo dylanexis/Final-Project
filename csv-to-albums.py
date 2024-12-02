@@ -41,16 +41,17 @@ def generate_html_for_album(album, output_filename):
         <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     </head>
     <body id = "bckgrnd">
-      <a class = "skip" href="#main">Skip to Main Content</a>
+      <a class = "skip" href="#start">Skip to Main Content</a>
     <header>
-        <nav>
-            <h1 class = "home_button">
+        <nav id = "home">
+            <img src = "../images/misc/CD.png" alt = "CD Logo">
+            <div class = "home_button">
             <a href="../index.html">Home</a>
-            </h1>
+            </div>
         </nav>
     </header>
     <div class = "info">
-        <div class="album">
+        <div id = "start" class="album" tabindex = "1">
             <div class = "cover"><img src="../images/covers/{album['album_image']}" alt="{album['album_name']} cover"></div>
             <div class = "texts">
                 <div id = "title"><h1>{album['album_name']}</h1></div>
@@ -60,20 +61,21 @@ def generate_html_for_album(album, output_filename):
         </div>
         <div class = "genres">
             <h2>Genres</h2>
-            <div id = "{album['genre1']}">{album['genre1']}</div>
-            <div id = "{album['genre2']}">{album['genre2']}</div>
-            <div id = "{album['genre3']}">{album['genre3']}</div>
-            <div id = "{album['genre4']}">{album['genre4']}</div>
+            <div>{album['genre1']}</div>
+            <div>{album['genre2']}</div>
+            <div>{album['genre3']}</div>
+            <div>{album['genre4']}</div>
         </div>
-        <div class = "rating">
+        <div class = "rating" tabindex = "1">
             <div>{album['pitchfork_rating']}</div>
                 <p>Pitchfork Rating</p>
         </div>
-        <div class = "fav">
-            <div>Favorite Track</div> {album['favorite']}
+        <div class = "fav" tabindex = "1">
+            <div>Favorite Track</div>
+            <div>{album['favorite']}</div>
         </div>
-            <div class = "comments">
-                <p><strong>Comments:</strong> {album['comments']}</p>
+            <div class = "comments" tabindex = "1">
+                <p>{album['comments']}</p>
             </div>
         </div>
     </body>
