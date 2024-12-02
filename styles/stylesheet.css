@@ -43,14 +43,14 @@ transform: translateY(0%);
     font-size: 18px;
     border: none;
     outline: none;
-    background-color:black;
+    background-color:#0d1b2a;
     color: white;
     padding: 15px;
     border-radius: 4px;
   }
   
   #toTop:hover {
-    background-color: #555;
+    background-color: #415a77;
   }
 
 /* Home Styles */
@@ -121,9 +121,8 @@ position: relative;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-.tile img:hover{
-  width:70vw;
-  border-radius: 25px;
+.tile:hover{
+  border: 2px solid #1b263b;
   transition-duration: 0.4s;
 }
 
@@ -132,7 +131,7 @@ position: relative;
 }
 
 .tile_link{ 
-color: black;
+color: #0d1b2a;
 text-decoration: none;
 text-transform: none;
 }
@@ -202,6 +201,9 @@ footer{
   #toTop:hover{
     background-color: #778da9;
   }
+  .tile:hover{
+    border-color: #778da9;
+  }
 
   .artist, .album_name{
     color: #e0e1dd;
@@ -225,8 +227,8 @@ footer{
     background-color: #1b263b;
     color: #e0e1dd;
   }
-}
 
+}
 
 /* Tablet View */
 @media screen and (min-width: 768px){
@@ -240,7 +242,6 @@ footer{
 }
 
 /* Desktop View */
-
 @media screen and (min-width: 960px){
   .album_gallery{
     grid-template-columns: repeat(4,1fr);
