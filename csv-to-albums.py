@@ -41,11 +41,11 @@ def generate_html_for_album(album, output_filename):
         <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     </head>
     <body id = "bckgrnd">
-      <a class = "skip" href="#start">Skip to Main Content</a>
+      <a class = "skip" href="#start" tabindex = "1">Skip to Main Content</a>
     <header>
         <nav id = "home">
+            <div class = "home_button" tabindex = "1">
             <img src = "../images/misc/CD.png" alt = "CD Logo">
-            <div class = "home_button">
             <a href="../index.html">Home</a>
             </div>
         </nav>
@@ -59,7 +59,7 @@ def generate_html_for_album(album, output_filename):
                 <div id = "year" ><p>{album['release_year']}</p></div>
             </div>
         </div>
-        <div class = "genres">
+        <div class = "genres" tabindex="1">
             <h2>Genres</h2>
             <div>{album['genre1']}</div>
             <div>{album['genre2']}</div>
