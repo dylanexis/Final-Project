@@ -42,17 +42,17 @@ def generate_html_for_album(album, output_filename):
         <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     </head>
     <body id = "bckgrnd">
-      <a class = "skip" href="#start" tabindex = "1">Skip to Main Content</a>
+      <a class = "skip" href="#start">Skip to Main Content</a>
     <header>
         <nav id = "home">
-            <div class = "home_button" tabindex = "1">
+            <div class = "home_button">
             <img src = "../images/misc/CD.png" alt = "CD Logo">
             <a href="../index.html">Home</a>
             </div>
         </nav>
     </header>
     <div class = "info">
-        <div id = "start" class="album" tabindex = "1">
+        <div id = "start" class="album">
             <div class = "cover"><img src="../images/covers/{album['album_image']}" alt="{album['album_name']} cover"></div>
             <div class = "texts">
                 <div id = "title"><h1>{album['album_name']}</h1></div>
@@ -60,22 +60,22 @@ def generate_html_for_album(album, output_filename):
                 <div id = "year" ><p>{album['release_year']}</p></div>
             </div>
         </div>
-        <div class = "genres" tabindex="1">
-            <h2>Genres</h2>
+        <div class = "genres">
+            <h2 class = "header2">Genres</h2>
             <div>{album['genre1']}</div>
             <div>{album['genre2']}</div>
             <div>{album['genre3']}</div>
             <div>{album['genre4']}</div>
         </div>
-        <div class = "rating" tabindex = "1">
+        <div class = "rating">
             <div>{album['pitchfork_rating']}</div>
-                <p>Pitchfork Rating</p>
+                <h2 class = "header2" >Pitchfork Rating</h2>
         </div>
-        <div class = "fav" tabindex = "1">
-            <div>Favorite Track</div>
+        <div class = "fav">
+            <h2 class = "header2">Favorite Track</h2>
             <a href="{album['song_link']}">{album['favorite']}</a>
         </div>
-            <div class = "comments" tabindex = "1">
+            <div class = "comments">
                 <p>{album['comments']}</p>
             </div>
         </div>
