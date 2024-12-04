@@ -241,6 +241,10 @@ padding-right: 5px;
 
 }
 
+label{
+  font-size: 0.05rem;
+}
+
 /* End Album Gallery */
 
 footer{

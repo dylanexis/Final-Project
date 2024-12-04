@@ -14,3 +14,9 @@
 11/20/2024
     - 6 hours
         + JavaScript Craze!! Literally no styling decided yet... That's ok...
+        + DEBUGGED THE SORTING FEATURE FINALLY
+12/1/2024
+    - 8 hours
+        + Styling frenzy and final touches
+        + Badges for albums
+        + Coloring
