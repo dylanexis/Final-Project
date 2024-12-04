@@ -16,10 +16,11 @@ def read_albums_from_csv(filename='albums.csv'):
                 'genre3': row[4],
                 'genre4': row[5],  # Genres from column 2 to 5
                 'release_year': row[6],
-                'comments': row[7] if row[7] else "No comments available.",
+                'comments': row[7],
                 'pitchfork_rating': row[8],
                 'favorite': row[9],
                 'album_image': row[10],  # Image filename
+                'song_link': row[11] # Spotify Link
             }
             albums.append(album)
     return albums
@@ -72,7 +73,7 @@ def generate_html_for_album(album, output_filename):
         </div>
         <div class = "fav" tabindex = "1">
             <div>Favorite Track</div>
-            <div>{album['favorite']}</div>
+            <a href="{album['song_link']}">{album['favorite']}</a>
         </div>
             <div class = "comments" tabindex = "1">
                 <p>{album['comments']}</p>

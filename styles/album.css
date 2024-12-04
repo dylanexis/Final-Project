@@ -40,10 +40,9 @@ nav a{
 
 nav:hover{
     text-decoration: underline;
-
 }
 
-
+/* Main grid containing each tile */
 .info{
     align-items: center;
     display: grid;
@@ -54,6 +53,7 @@ nav:hover{
     gap: 15px;
 }
 
+/* Album Styles */
 .album {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -95,13 +95,14 @@ nav:hover{
     display: grid;
     grid-template-rows: auto auto;
     height: 100%;
+    width: 100%;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
     border-radius: 10px;
 }
 
 .rating > div{
-    font-size: 4.5rem;
+    font-size: 4.0em;
     padding-bottom: 5px;
     padding-top: 10px;
 }
@@ -125,6 +126,7 @@ nav:hover{
     border-radius: 10px;
 }
 
+/* Personal Thoughts */
 .comments{
     grid-row: 3;
     grid-column: 1/4;
@@ -135,6 +137,7 @@ nav:hover{
     border-radius: 10px;
     font-size: 18px;
     overflow: scroll;
+    line-height: 1.6;
 }
 
 /* Genre Styles */
